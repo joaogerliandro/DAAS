@@ -1,0 +1,7 @@
+{
+    "user":     "usr",
+    "password": "usr",
+    "host":     "localhost",
+    "port":     "5432",
+    "database": "daas"
+}    
