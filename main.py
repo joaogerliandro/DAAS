@@ -1,6 +1,6 @@
 import psycopg2 as pg
 import json as js
-from operations import insert, select, delete
+from operations import insert, select, delete, update
 
 if __name__ == '__main__':
 

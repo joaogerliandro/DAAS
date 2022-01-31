@@ -53,16 +53,19 @@ class delete:
 
 class update:
 
-    query = "UPDATE {} SET {} = {} WHERE "
+    query = "UPDATE {0} SET {1} = {2} WHERE {3} = {4}"
     
     def by_id(table, col, value, id):
-        return delete.query.format(table, "id", id)
+        if type(value) == str: value = f"'{value}'"
+        return update.query.format(table, col, value, "id", id)
 
     def by_email(table, col, value, email):
-        return delete.query.format(table, "email", f"'{email}'")
+        if type(value) == str: value = f"'{value}'"
+        return update.query.format(table, col, value, "email", f"'{email}'")
         
     def by_telefone(table, col, value, telefone):
-       return delete.query.format(table, "email", f"'{telefone}'")
+        if type(value) == str: value = f"'{value}'"
+        return update.query.format(table, col, value, "telefone", f"'{telefone}'")
 
 class select:
     query = "SELECT {0} FROM {1}"

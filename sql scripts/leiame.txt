@@ -1,0 +1,15 @@
+ALUNOS:
+
+João Gerliandro Silva Martins - 494781
+Isaac Emanuel Costa de Andrade - 493661
+Matheus da Silva Holanda - 495488
+
+INSTRUÇÕES: 
+
+Os scripts devem ser executados na seguinte ordem
+para que o banco fique 100% integrável com a aplicação:
+
+    1 - criacao das tabelas.sql
+    2 - povoar tabelas.sql
+    3 - visoes.sql
+    4 - funcoes e gatilhos.sql, usuarios.sql
