@@ -12,4 +12,5 @@ para que o banco fique 100% integrável com a aplicação:
     1 - criacao das tabelas.sql
     2 - povoar tabelas.sql
     3 - visoes.sql
-    4 - funcoes e gatilhos.sql, usuarios.sql
+    4 - funcoes e gatilhos.sql
+    5 - usuarios.sql
