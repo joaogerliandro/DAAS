@@ -53,5 +53,5 @@ Mkfile.old
 dkms.conf
 
 #Ignore Folder
-__pycache__
 __pycache__/
+.vscode/
