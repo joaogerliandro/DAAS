@@ -41,6 +41,7 @@
 *.su
 *.idb
 *.pdb
+*.pyc
 
 # Kernel Module Compile Results
 *.mod*
@@ -50,3 +51,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+#Ignore Folder
+__pycache__
+__pycache__/

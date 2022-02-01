@@ -50,6 +50,9 @@ class delete:
         
     def by_telefone(table, telefone):
        return delete.query.format(table, "email", f"'{telefone}'")
+   
+    def all(table):
+       return "DELETE FROM {0}".format(table) 
 
 class update:
 
@@ -75,6 +78,9 @@ class select:
     
     def params(table, keys):
         return select.query.format(keys, table)
-     
+    
+    def where(table, keys, condition):
+        condition_str = " WHERE {0}".format(condition)
+        return select.params(table, keys) + condition_str
     
     
